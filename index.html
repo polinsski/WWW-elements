@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>www Artefacts</title>
+  <style>
+    /* CSS styling for the webpage */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      margin: 20px;
+    }
+    .dropdown {
+      display: inline-block;
+      margin: 10px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 10px;
+      padding: 20px;
+    }
+    .grid-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    .grid-item img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>www artefacts</h1>
+    <div class="dropdown">
+      <label for="category">Category:</label>
+      <select id="category">
+        <!-- Add category options here -->
+        <option value="buttons">Buttons</option>
+        <option value="menus">Menus</option>
+        <option value="typography">Image Galleries</option>
+        <option value="typography">Cards and Grid Layouts</option>
+        <!-- Add more categories as needed -->
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="sort">Sort:</label>
+      <select id="sort">
+        <!-- Add sorting options here -->
+        <option value="name">Newest first</option>
+        <option value="name">Oldest first</option>
+        <option value="date">Popular</option>
+        <!-- Add more sorting options as needed -->
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="filter">Filter:</label>
+      <select id="filter" multiple>
+        <!-- Add filter options here -->
+        <option value="red">large</option>
+        <option value="blue">small</option>
+        <option value="green">on-click</option>
+        <option value="green">hover</option>
+        <option value="green">shape</option>
+        <option value="green">accessibility</option>
+        <!-- Add more filter options as needed -->
+      </select>
+    </div>
+  </header>
+  
+  <div class="grid-container">
+    <!-- Add grid items here -->
+    <div class="grid-item">
+      <img src="/img/image 13.png" alt="Image 1">
+    </div>
+    <div class="grid-item">
+      <img src="/img/image 14.png" alt="Image 2">
+    </div>
+    <div class="grid-item">
+      <img src="/img/image 15.png" alt="Image 3">
+    </div>
+    <div class="grid-item">
+        <img src="/img/image 16.png" alt="Image 1">
+      </div>
+      <div class="grid-item">
+        <img src="/img/image 17.png" alt="Image 2">
+      </div>
+      <div class="grid-item">
+        <img src="/img/image 19.png" alt="Image 3">
+      </div>
+      <div class="grid-item">
+        <img src="/img/image 20.png" alt="Image 1">
+      </div>
+      <div class="grid-item">
+        <img src="/img/image 21.png" alt="Image 2">
+      </div>
+      <div class="grid-item">
+        <img src="/img/image 28.png" alt="Image 3">
+      </div>
+      <div class="grid-item">
+          <img src="/img/image 23.png" alt="Image 1">
+        </div>
+        <div class="grid-item">
+          <img src="/img/image 24.png" alt="Image 2">
+        </div>
+        <div class="grid-item">
+          <img src="/img/image 25.png" alt="Image 3">
+        </div>
+    <!-- Add more grid items as needed -->
+  </div>
+</body>
+</html>
