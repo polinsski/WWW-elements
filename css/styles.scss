@@ -1,0 +1,94 @@
+ /* CSS styling for the webpage */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    margin: 20px;
+  }
+  .dropdown {
+    display: inline-block;
+    margin: 10px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+  }
+  .grid-item {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    text-align: center;
+    transition: box-shadow 100ms ease-in-out;
+    cursor:pointer;
+
+    &:hover{
+       
+            box-shadow: 0 0 5px yellow;
+
+    }
+
+      /* Center the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+  }
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+    
+  }
+
+  .tag {
+    border-radius: 10%;
+    cursor:pointer;
+  }
+
+  .on-click {
+    background-color: rgba(161, 170, 255, 0.655);
+  }
+
+  .large {
+    background-color: rgba(161, 255, 188, 0.655);
+  }
+
+  .without-label {
+    background-color: rgba(255, 161, 255, 0.655);
+  }
+
+  .slide-in-text {
+    position: fixed;
+    top: 0;
+    right: -30vw;
+    width: 30vw;
+    height: 100vh;
+    background-color: #f9f9f9;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+    padding-left: 1rem;
+
+    img{
+        margin-left: calc(50% - 20px);
+    }
+
+    h2{
+        text-align: center;
+        margin-top: 0;
+    }
+  }
+  .slide-in-text.active {
+    right: 0;
+
+    .timestamp{
+        font-size: 0.6rem;
+        text-align: center;
+        margin: 0;
+    }
+  }
